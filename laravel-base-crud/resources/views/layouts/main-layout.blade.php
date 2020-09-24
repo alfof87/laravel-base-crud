@@ -1,3 +1,3 @@
-@include ("partials.header");
-@include ("partials.main");
-@include ("partials.footer");
+@include ("layouts.partials.header");
+@include ("layouts.partials.main");
+@include ("layouts.partials.footer");

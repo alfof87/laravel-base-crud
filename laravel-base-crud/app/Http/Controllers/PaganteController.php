@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class PaganteController extends Controller
 {
+  public function index(){
     $paganti = Pagante::all();
-    return view("paganti", compact("paganti"));
+    return view("layouts.main-layout", compact("paganti"));
+ }
 }
