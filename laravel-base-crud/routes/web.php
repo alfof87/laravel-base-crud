@@ -3,4 +3,4 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', "PaganteController@index") -> name("index");
+Route::get('/paganti', "PaganteController@index") -> name("index");
