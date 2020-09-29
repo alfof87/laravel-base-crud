@@ -10,7 +10,7 @@ $factory->define(post::class, function (Faker $faker) {
       'title'    => $faker ->  word(),
       'text'     => $faker ->  word(),
       'category' => $faker ->  word(),
-      'like'     => $faker ->  smallInteger('like'),
-      'dislike'  => $faker ->  smallInteger('dislike')
+      'like'     => $faker ->  numberBetween(1, 50),
+      'dislike'  => $faker ->  numberBetween(1, 50)
     ];
 });
