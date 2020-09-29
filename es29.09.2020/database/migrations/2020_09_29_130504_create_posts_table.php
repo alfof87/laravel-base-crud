@@ -16,11 +16,16 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
 
-            $table ->  word();
-            $table ->  word();
-            $table ->  word();
-            $table ->  numberBetween(1, 50);
-            $table ->  numberBetween(1, 50);
+            // $table ->  word();
+            // $table ->  word();
+            // $table ->  word();
+            // $table ->  numberBetween(1, 50);
+            // $table ->  numberBetween(1, 50);
+            $table -> string('title', 64);
+            $table -> string('text', 64);
+            $table -> string('category', 64);
+            $table -> smallIncrements('like');
+            $table -> smallIncrements('dislike');
 
             $table->timestamps();
         });
