@@ -8,6 +8,7 @@ class PaganteController extends Controller
 {
   public function index(){
     $paganti = Pagante::all();
+
     return view("layouts.main-layout", compact("paganti"));
  }
 }
